@@ -34,15 +34,18 @@ int compareByHeight(const void* person1, const void* person2) {
 
 // Función para imprimir la información de una persona
 void printPerson(const Person* person) {
-    printf("Nombre: %-20s, Edad: %3d, Altura: %6.2f cm\n",
+    printf("%-17s %3d años   %6.2f cm\n",
         person->name, person->age, person->height);
 }
 
 // Función para imprimir un arreglo de personas
 void printArray(const Person people[], int size, const char* title) {
-    printf("\n---- %s ----\n", title);
+    printf("%s\n\n", title);
+    printf("%-22s %-7s   %-10s\n", "Nombre", "Edad", "Altura");
+    printf("%-22s %-7s   %-10s\n", "-------------------", "-------", "---------");
     for (int i = 0; i < size; i++) {
-        printf("%d. ", i + 1);
+        printf("%2d. ", i + 1);
         printPerson(&people[i]);
     }
+    printf("\n");
 }
