@@ -1,5 +1,5 @@
 # ------------------------------------------------------
-# Makefile para compilar el proyecto de arreglo dinámico.
+# Makefile para compilar el proyecto del Laboratorio 6.
 # ------------------------------------------------------
 
 # Compilador y flags de compilación
